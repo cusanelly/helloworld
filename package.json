@@ -5,6 +5,6 @@
     "main": "index.js",
     "private": true,
     "scripts": {
-        "build": "node main.js"
+        "build": "node index.js"
     }
 }
