@@ -79,7 +79,7 @@ files:
 # During the ApplicationStop deployment lifecycle event, run the commands
 #   in the script specified in "location" starting from the root of the
 #   revision's file bundle.
-#  ApplicationStop:
+  ApplicationStop:
 #    - location:
 #      timeout: 300
 #      runas: root
@@ -88,7 +88,7 @@ files:
 #      runas: root
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  BeforeInstall:
+  BeforeInstall:
 #    - location:
 #      timeout: 300
 #      runas: root
@@ -97,7 +97,7 @@ files:
 #      runas: root
 # During the AfterInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  AfterInstall:
+  AfterInstall:
 #    - location:
 #      timeout: 300
 #      runas: root
@@ -106,7 +106,7 @@ files:
 #      runas: root
 # During the ApplicationStart deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  ApplicationStart:
+  ApplicationStart:
 #    - location:
 #      timeout: 300
 #      runas: root
@@ -115,7 +115,7 @@ files:
 #      runas: root
 # During the ValidateService deployment lifecycle event, run the commands
 #   in the script specified in "location".
-#  ValidateService:
+  ValidateService:
 #    - location:
 #      timeout: 300
 #      runas: root
