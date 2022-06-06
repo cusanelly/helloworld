@@ -24,7 +24,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /
-    destination: /var/www/html
+    destination: /usr/share/nginx/html
 # - source:
 #  destination:
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
@@ -86,7 +86,6 @@ hooks:
   #    - location:
   #      timeout: 300
   #      runas: root
-  #  DownloadBundle:
   # During the BeforeInstall deployment lifecycle event, run the commands
   #   in the script specified in "location".
   BeforeInstall:
@@ -96,7 +95,6 @@ hooks:
   #    - location:
   #      timeout: 300
   #      runas: root
-  #  Install:
   # During the AfterInstall deployment lifecycle event, run the commands
   #   in the script specified in "location".
   AfterInstall:
