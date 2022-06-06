@@ -2,5 +2,9 @@
     "name": "test-project",
     "version": "1.0.0",
     "description": "A Nodejs project",
-    "main": "index.js"
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "build": "node main.js"
+    }
 }
