@@ -82,9 +82,9 @@ hooks:
   #   in the script specified in "location" starting from the root of the
   #   revision's file bundle.
   ApplicationStop:
-  #    - location:
-  #      timeout: 300
-  #      runas: root
+    - location: scripts/appstop.sh
+      timeout: 300
+      runas: root
   #    - location:
   #      timeout: 300
   #      runas: root
@@ -109,18 +109,18 @@ hooks:
   # During the ApplicationStart deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-  #    - location:
-  #      timeout: 300
-  #      runas: root
+    - location: scripts/appstart.sh
+      timeout: 300
+      runas: root
   #    - location:
   #      timeout: 300
   #      runas: root
   # During the ValidateService deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ValidateService:
-#    - location:
-#      timeout: 300
-#      runas: root
+    - location: scripts/validateservice.sh
+      timeout: 300
+      runas: root
 #    - location:
 #      timeout: 300
 #      runas: root
