@@ -2,4 +2,5 @@
 set -e
 cd /usr/share/nginx/html
 npm install
-npm run build
+npm i pm2 -g
+pm2 start
